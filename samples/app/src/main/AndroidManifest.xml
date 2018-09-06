@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".ExampleOne" />
         <activity android:name=".ExampleTwo" />
-        <activity android:name=".ExampleThree"></activity>
+        <activity android:name=".ExampleThree" />
+        <activity android:name=".ExampleFour"></activity>
     </application>
 
 </manifest>

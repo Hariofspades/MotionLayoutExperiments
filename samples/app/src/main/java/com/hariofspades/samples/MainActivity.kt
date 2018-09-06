@@ -28,6 +28,10 @@ class MainActivity : AppCompatActivity() {
         attributes.setOnClickListener {
             startActivity(Intent(this, ExampleThree::class.java))
         }
+
+        imageFilter.setOnClickListener {
+            startActivity(Intent(this, ExampleFour::class.java))
+        }
     }
 
 
