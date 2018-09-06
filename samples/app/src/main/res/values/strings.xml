@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Samples</string>
+    <string name="simple">Animation using different layouts</string>
+    <string name="motionScene">Animation using motion scene</string>
+    <string name="attributes">Animation using attributes</string>
+    <string name="imageFilter">Animation using image filter</string>
+    <string name="keyframes">Animation using keyframes</string>
+</resources>
