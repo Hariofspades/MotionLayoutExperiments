@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@layout/example_1_start_scene"
+        motion:constraintSetEnd="@layout/example_1_end_scene"
+        motion:duration="1000">
+        <OnSwipe
+            motion:touchAnchorId="@+id/pokeball"
+            motion:touchAnchorSide="bottom"
+            motion:dragDirection="dragUp" />
+    </Transition>
+
+</MotionScene>
