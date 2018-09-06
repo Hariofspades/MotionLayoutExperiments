@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         motionScene.setOnClickListener {
             startActivity(Intent(this, ExampleTwo::class.java))
         }
+
+        attributes.setOnClickListener {
+            startActivity(Intent(this, ExampleThree::class.java))
+        }
     }
 
 

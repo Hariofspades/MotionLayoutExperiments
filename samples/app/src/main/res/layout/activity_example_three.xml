@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/example_2_motion_scene"
+    app:layoutDescription="@xml/example_3_motion_scene"
     app:showPaths="true"
     tools:context=".ExampleOne">
 
-    <ImageView
+    <View
         android:id="@+id/pokeball"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -18,7 +18,6 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/ic_pokeball"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
