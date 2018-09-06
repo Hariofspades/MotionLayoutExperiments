@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         imageFilter.setOnClickListener {
             startActivity(Intent(this, ExampleFour::class.java))
         }
+
+        keyframes.setOnClickListener {
+            startActivity(Intent(this, ExampleFive::class.java))
+        }
     }
 
 

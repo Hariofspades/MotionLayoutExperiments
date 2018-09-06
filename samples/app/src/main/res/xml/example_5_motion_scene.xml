@@ -10,6 +10,30 @@
             motion:touchAnchorId="@+id/pokeball"
             motion:touchAnchorSide="bottom"
             motion:dragDirection="dragUp" />
+        <KeyFrameSet>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.25"
+                motion:framePosition="25"
+                motion:target="@+id/pokeball"/>
+            <KeyPosition
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.75"
+                motion:framePosition="75"
+                motion:target="@+id/pokeball"/>
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                android:rotation="-45"
+                motion:framePosition="25"
+                motion:target="@id/pokeball" />
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                android:rotation="45"
+                motion:framePosition="75"
+                motion:target="@id/pokeball" />
+        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -18,18 +42,17 @@
             android:id="@id/pokeball"
             android:layout_width="64dp"
             android:layout_height="64dp"
+            android:layout_marginBottom="32dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
+            motion:layout_constraintStart_toStartOf="parent">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#ffbdbd"/>
-
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
         </Constraint>
 
     </ConstraintSet>
@@ -40,17 +63,17 @@
             android:id="@id/pokeball"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginBottom="32dp"
             android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="32dp"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent">
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
             <CustomAttribute
-                motion:attributeName="backgroundColor"
-                motion:customColorValue="#c9c9ff"/>
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
         </Constraint>
 
     </ConstraintSet>

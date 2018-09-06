@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/example_1_scene"
+    android:background="#c9c9ff"
     app:showPaths="true"
     tools:context=".ExampleOne">
 

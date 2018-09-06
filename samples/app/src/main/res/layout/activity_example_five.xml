@@ -5,24 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/example_2_motion_scene"
-    android:background="#f1cbff"
+    android:background="#e1f7d5"
+    app:layoutDescription="@xml/example_5_motion_scene"
     app:showPaths="true"
     tools:context=".ExampleOne">
 
-    <ImageView
+    <android.support.constraint.utils.ImageFilterView
         android:id="@+id/pokeball"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/ic_pokeball"
         android:scaleType="centerCrop"
+        android:src="@drawable/ic_pokeball"
+        app:altSrc="@drawable/ultra_ball"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.motion.MotionLayout>
