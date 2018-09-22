@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Platter</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="calories">200 Kcal</string>
+    <string name="ingredients">Tomatos, Cheese, Lettuce,\n Chips, Tacos, Dessing</string>
+    <string name="price">₹180</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

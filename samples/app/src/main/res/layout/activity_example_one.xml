@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/example_1_scene"
     android:background="#c9c9ff"
+    app:layoutDescription="@xml/example_1_scene"
     app:showPaths="true"
+    app:applyMotionScene="true"
     tools:context=".ExampleOne">
 
     <ImageView
