@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.hariofspades.collapsetoolbar.util.CollapsibleToolbar
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.hariofspades.collapsetoolbar.util.CollapsibleToolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:minHeight="60dp"
-    android:fitsSystemWindows="false"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:minHeight="60dp"
     app:layoutDescription="@xml/motion_scene"
     app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
 
@@ -14,22 +13,23 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/hari_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hari"
-        android:textSize="24sp"
+        android:autoSizeTextType="uniform"
         android:padding="8dp"
+        android:text="Hari"
         android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/avatar"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/avatar"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </com.hariofspades.collapsetoolbar.util.CollapsibleToolbar>
